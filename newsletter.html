@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Newsletter Frank Sinatra</title>
+</head>
+<body>
+
+<header>
+    <h1>Suscríbete a la newsletter de Frank Sinatra</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="discografia.html">Discografía</a></li>
+            <li><a href="newsletter.html">Newsletter</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <!-- Formulario con tipos de input correctos (no todo text) -->
+    <section>
+        <h2>Formulario de inscripción</h2>
+
+        <!--
+            Acción vacía porque es práctica. El método POST es el típico para formularios reales.
+        -->
+        <form action="" method="post">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="apellidos">Apellidos:</label><br>
+            <input type="text" id="apellidos" name="apellidos" required><br><br>
+
+            <label for="edad">Edad:</label><br>
+            <input type="number" id="edad" name="edad" min="0" max="120" required><br><br>
+
+            <label for="pais">País:</label><br>
+            <select id="pais" name="pais">
+                <option value="">Selecciona tu país</option>
+                <option value="es">España</option>
+                <option value="mx">México</option>
+                <option value="ar">Argentina</option>
+                <option value="co">Colombia</option>
+                <option value="otro">Otro</option>
+            </select><br><br>
+
+            <label for="email">Correo electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <!-- Intereses del usuario (checkbox para múltiples opciones) -->
+            <fieldset>
+                <legend>Intereses:</legend>
+                <input type="checkbox" id="interes_clasicos" name="intereses" value="clasicos">
+                <label for="interes_clasicos">Clásicos de Sinatra</label><br>
+
+                <input type="checkbox" id="interes_conciertos" name="intereses" value="conciertos">
+                <label for="interes_conciertos">Conciertos históricos</label><br>
+
+                <input type="checkbox" id="interes_discografia" name="intereses" value="discografia">
+                <label for="interes_discografia">Discografía completa</label><br>
+
+                <input type="checkbox" id="interes_curiosidades" name="intereses" value="curiosidades">
+                <label for="interes_curiosidades">Curiosidades y anécdotas</label><br>
+            </fieldset>
+            <br>
+
+            <!-- Campo para aceptar condiciones (tipo checkbox obligatorio) -->
+            <input type="checkbox" id="acepto" name="acepto" required>
+            <label for="acepto">Acepto recibir información relacionada con el artista.</label><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>Formulario de práctica para la asignatura de Lenguajes de marcas.</p>
+</footer>
+
+</body>
+</html>
