@@ -68,3 +68,77 @@
             <img src="img/in_the_wee_small_hours.jpg.jpg"
                  alt="Portada In the Wee Small Hours"
                  width="250">
+            <!-- <img> inserta una imagen.
+                 src="..." es la ruta de la imagen.
+                 alt="..." es el texto alternativo (importante para accesibilidad y si la imagen no carga).
+                 width="250" ajusta el ancho mostrado en píxeles. -->
+
+            <figcaption>Portada original del álbum.</figcaption>
+            <!-- <figcaption> es el texto que describe la imagen asociada a <figure>. -->
+        </figure>
+
+        <article>
+            <!-- <article> representa un bloque de contenido independiente.
+                 Tiene sentido por sí solo (por ejemplo, una ficha, una noticia, un post). -->
+
+            <h2>Información del álbum</h2>
+            <!-- <h2> título de segundo nivel (subtítulo dentro del contenido). -->
+
+            <p><strong>Artista:</strong> Frank Sinatra</p>
+            <!-- <p> define un párrafo de texto.
+                 <strong> resalta el texto y semánticamente indica importancia. -->
+
+            <p><strong>Año de lanzamiento:</strong> 1955</p>
+            <p><strong>Descripción:</strong> Álbum con ambiente nocturno y melancólico, uno de los primeros conceptuales.</p>
+        </article>
+
+        <article>
+            <h2>Canciones</h2>
+
+            <ul>
+                <!-- Lista de canciones. De nuevo usamos <ul> porque es una lista sin orden numérico. -->
+
+                <li>In the Wee Small Hours of the Morning</li>
+                <!-- Cada <li> es una canción. -->
+                <li>Mood Indigo</li>
+                <li>Glad to Be Unhappy</li>
+                <li>I Get Along Without You Very Well</li>
+                <li>Deep in a Dream</li>
+            </ul>
+        </article>
+    </section>
+
+    <section>
+        <!-- Nueva sección específica para el reto del audio MP3. -->
+
+        <h2>Reproducir un fragmento del álbum</h2>
+
+        <!--
+            <audio> inserta un reproductor de audio en HTML.
+            controls añade los controles (play, pausa, volumen...) automáticamente.
+        -->
+        <audio controls>
+            <!--
+                <source> indica el archivo de audio a cargar.
+                src="..." es la ruta del mp3.
+                type="audio/mpeg" indica el tipo de archivo (formato).
+                Puedes poner varios <source> con distintos formatos.
+            -->
+            <source src="audio/in_the_wee_small_hours_sample.mp3" type="audio/mpeg">
+
+            <!-- Este texto se muestra solo si el navegador NO soporta la etiqueta <audio>. -->
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </section>
+</main>
+
+<footer>
+    <!-- <footer> representa el pie de página.
+         Suele contener enlaces de vuelta, info legal, autor, etc. -->
+
+    <p>Volver a la <a href="discografia.html">discografía</a></p>
+    <!-- Párrafo con enlace de navegación rápida a otra parte del sitio. -->
+</footer>
+
+</body>
+</html>
