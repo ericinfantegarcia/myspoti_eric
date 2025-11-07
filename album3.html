@@ -8,6 +8,8 @@
 
 <header>
     <h1>Come Fly With Me (1958)</h1>
+
+    <!-- Menú de navegación común a todo el sitio -->
     <nav>
         <ul>
             <li><a href="index.html">Inicio</a></li>
@@ -18,33 +20,56 @@
 </header>
 
 <main>
+
+    <!-- Bloque principal del álbum: portada + info + canciones -->
     <section>
+
+        <!-- figure agrupa la portada con su descripción -->
         <figure>
-            <img src="img/come_fly_with_me.jpg.jpg" alt="Portada Come Fly With Me" width="250">
-            <figcaption>Portada del álbum.</figcaption>
+            <!-- Ajusta la ruta al nombre real del archivo en tu carpeta /img -->
+            <img src="img/come_fly_with_me.jpg"
+                 alt="Portada Come Fly With Me"
+                 width="250">
+            <figcaption>Portada original del álbum.</figcaption>
         </figure>
 
+        <!-- Ficha técnica básica del álbum -->
         <article>
             <h2>Información del álbum</h2>
             <p><strong>Artista:</strong> Frank Sinatra</p>
             <p><strong>Año de lanzamiento:</strong> 1958</p>
-            <p><strong>Descripción:</strong> Álbum temático con canciones sobre viajes y destinos alrededor del mundo.</p>
+            <p><strong>Descripción:</strong> Álbum temático sobre viajes y destinos, con arreglos orquestales llenos de swing.</p>
         </article>
 
+        <!-- Lista de canciones separada como otro bloque semántico -->
         <article>
             <h2>Canciones</h2>
             <ul>
                 <li>Come Fly With Me</li>
                 <li>Around the World</li>
                 <li>Isle of Capri</li>
-                <li>Moonlight in Vermont</li>
-                <li>London by Night</li>
+                <li>On the Road to Mandalay</li>
+                <li>Let's Get Away from It All</li>
+                <!-- Completa la lista si tu profe lo pide -->
             </ul>
         </article>
+    </section>
+
+    <!-- Sección para el reto del audio con solo HTML -->
+    <section>
+        <h2>Reproducir un fragmento del álbum</h2>
+
+        <!-- Reproductor de audio nativo del navegador -->
+        <audio controls>
+            <!-- MP3 ubicado en /audio. Cambia el nombre si usas otro archivo. -->
+            <source src="audio/come_fly_with_me_sample.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
     </section>
 </main>
 
 <footer>
+    <!-- Pie con navegación de retorno a la lista de álbumes -->
     <p>Volver a la <a href="discografia.html">discografía</a></p>
 </footer>
 
