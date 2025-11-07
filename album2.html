@@ -8,6 +8,8 @@
 
 <header>
     <h1>Songs for Swingin' Lovers! (1956)</h1>
+
+    <!-- Menú de navegación reutilizado en todo el sitio -->
     <nav>
         <ul>
             <li><a href="index.html">Inicio</a></li>
@@ -18,33 +20,56 @@
 </header>
 
 <main>
+
+    <!-- Sección principal con portada + ficha + canciones -->
     <section>
+
+        <!-- Contenedor para la portada con pie de imagen -->
         <figure>
-            <img src="img/songs_for_swingin_lovers.jpg.jpg" alt="Portada Songs for Swingin' Lovers!" width="250">
-            <figcaption>Portada del álbum.</figcaption>
+            <!-- Ajusta la ruta/nombre del archivo según tu carpeta img -->
+            <img src="img/songs_for_swingin_lovers.jpg" 
+                 alt="Portada Songs for Swingin' Lovers!" 
+                 width="250">
+            <figcaption>Portada original del álbum.</figcaption>
         </figure>
 
+        <!-- Ficha técnica básica del álbum -->
         <article>
             <h2>Información del álbum</h2>
             <p><strong>Artista:</strong> Frank Sinatra</p>
             <p><strong>Año de lanzamiento:</strong> 1956</p>
-            <p><strong>Descripción:</strong> Álbum con temas alegres y arreglos de swing muy reconocibles.</p>
+            <p><strong>Descripción:</strong> Álbum lleno de arreglos brillantes y un tono optimista, ideal para su etapa swing.</p>
         </article>
 
+        <!-- Lista de canciones como bloque separado -->
         <article>
             <h2>Canciones</h2>
             <ul>
                 <li>You Make Me Feel So Young</li>
                 <li>It Happened in Monterey</li>
+                <li>You're Getting to Be a Habit with Me</li>
+                <li>You Brought a New Kind of Love to Me</li>
                 <li>Too Marvelous for Words</li>
-                <li>Old Devil Moon</li>
-                <li>I've Got You Under My Skin</li>
+                <!-- Puedes completar el tracklist si lo necesitas -->
             </ul>
         </article>
+    </section>
+
+    <!-- Reto MP3 también aplicado a este álbum -->
+    <section>
+        <h2>Reproducir un fragmento del álbum</h2>
+
+        <!-- Reproductor de audio simple con controles nativos del navegador -->
+        <audio controls>
+            <!-- Archivo MP3 que debes colocar en la carpeta /audio -->
+            <source src="audio/songs_for_swingin_lovers_sample.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
     </section>
 </main>
 
 <footer>
+    <!-- Enlace rápido para volver a la lista de álbumes -->
     <p>Volver a la <a href="discografia.html">discografía</a></p>
 </footer>
 
