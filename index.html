@@ -1,27 +1,46 @@
 <!DOCTYPE html>
+<!-- Indica al navegador que el documento usa HTML5 -->
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <!-- Conjunto de caracteres: permite mostrar tildes, ñ, etc. correctamente -->
+
     <title>Frank Sinatra - My spoti_einfante</title>
+    <!-- Título que aparece en la pestaña del navegador -->
 </head>
 <body>
+<!-- Todo el contenido visible de la página va dentro de <body> -->
 
 <header>
+    <!-- Encabezado principal del sitio: logo, título y menú -->
     <h1>Frank Sinatra</h1>
+
     <!-- Menú principal de navegación del sitio -->
     <nav>
+        <!-- Lista desordenada que contiene los enlaces del menú -->
         <ul>
+            <!-- Cada <li> es una opción del menú -->
+            <!-- href="index.html" enlaza a esta misma página (inicio) -->
             <li><a href="index.html">Inicio</a></li>
+
+            <!-- Enlace interno a la página donde estará la discografía -->
             <li><a href="discografia.html">Discografía</a></li>
+
+            <!-- Enlace interno a la página para suscribirse a la newsletter -->
             <li><a href="newsletter.html">Newsletter</a></li>
         </ul>
     </nav>
 </header>
 
 <main>
+    <!-- Contenido principal de la página (semántico, importante para accesibilidad y SEO) -->
+
     <!-- Sección de presentación básica del artista -->
     <section>
+        <!-- Título de nivel 2: subtítulo dentro del contenido principal -->
         <h2>¿Quién fue Frank Sinatra?</h2>
+
+        <!-- Párrafos de texto explicativo -->
         <p>
             Frank Sinatra (1915 - 1998) fue uno de los cantantes y actores más influyentes del siglo XX.
             Conocido por su voz inconfundible, su elegancia y una carrera llena de clásicos, se convirtió
@@ -33,13 +52,17 @@
         </p>
     </section>
 
-    <!-- Sección destacando algunos álbumes que luego ampliamos en otras páginas -->
+    <!-- Sección que agrupa varios artículos sobre álbumes concretos -->
     <section>
         <h2>Álbumes destacados</h2>
 
+        <!-- Cada <article> representa un bloque de contenido independiente
+             que tiene sentido por sí mismo (un álbum concreto) -->
         <article>
             <h3>In the Wee Small Hours (1955)</h3>
+            <!-- Descripción breve del álbum -->
             <p>Uno de sus primeros álbumes conceptuales, con un tono más íntimo y melancólico.</p>
+            <!-- Enlace a la página con la ficha completa de este álbum -->
             <a href="album1.html">Ver ficha del álbum</a>
         </article>
 
@@ -58,7 +81,7 @@
 </main>
 
 <footer>
-    <!-- Pie de página sencillo para todo el sitio -->
+    <!-- Pie de página: suele contener créditos, enlaces legales, info de contacto, etc. -->
     <p>Sitio web de práctica realizado por estudiante. Solo uso educativo.</p>
 </footer>
 
